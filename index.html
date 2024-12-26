@@ -1,62 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Web Pribadi Aesthetic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body
-<header>
-    <div class="navbar">
-        <div class="logo"><a href="#">Force Class</a></div>
-        <ul class="links">
-            <li><a href="hero">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
-        <a href="#" class="action_btn">Get Started</a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>    
-    </div>
-
-    <div class="dropdown_menu">
-        <li><a href="hero">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="services">Services</a></li>
-        <li><a href="contact">Contact</a></li>
-        <li><a href="#" class="action_btn">Get Started</a></li>
-    </div>
-</header>
-
-<main>
-    <section id="hero">
-        <h1>Welcome</h1>
-        <p>
-            Hai Perkenalkan <br />
-            Nama saya Baron Zulfikar A.<br />
-            ini adalah Web buatan saya sendiri
-        </p>
-    </section>
-</main>
-
-<script>
-    const toggle_btn = document.querySelector('.toggle_btn')
-    const toggle_btnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
-
-    toggleBtn.oneclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
-
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-</script>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nama Anda</h1>
+            <nav>
+                <a href="#about">Tentang Saya</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="content-section">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya adalah seorang profesional kreatif yang suka membangun dan berbagi karya dengan dunia.</p>
+        </section>
+        <section id="portfolio" class="content-section">
+            <h2>Portofolio</h2>
+            <div class="gallery">
+                <div class="item">Proyek 1</div>
+                <div class="item">Proyek 2</div>
+                <div class="item">Proyek 3</div>
+            </div>
+        </section>
+        <section id="contact" class="content-section">
+            <h2>Kontak</h2>
+            <p>Email: emailanda@example.com</p>
+            <p>Telepon: +62 81234567890</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Nama Anda. Dibuat dengan cinta.
+    </footer>
 </body>
 </html>
